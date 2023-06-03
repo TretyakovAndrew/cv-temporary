@@ -27,6 +27,7 @@ blockquote,
 dl,
 dd {
     margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -44,8 +45,9 @@ ol[class] {
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Упрощаем работу с изображениями */
@@ -68,11 +70,70 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+} */
+
+
+/* HEADER start */
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #c8c8c8;
 }
+
+.share-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 10px;
+    height: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.share-btn_icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(./src/icons/share_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.share-btn_info {
+    font-size: 12px;
+}
+
+.share-btn:hover {
+    border: solid 1px #067cfc;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #067cfc;
+}
+
+.header__nav_list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav_item {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05cm;
+}
+
+.header__nav_item a:hover {
+    color: #067cfc;
+}
+
+/* HEADER end */

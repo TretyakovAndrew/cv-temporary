@@ -84,7 +84,7 @@ select {
 } */
 
 .header,
-.cv-info {
+.cv-info, .footer {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -190,14 +190,16 @@ select {
 }
 
 .cv-info__name {
+  margin-bottom: 20px;
   font-size: 18px;
   letter-spacing: 0.05cm;
 }
 
 .cv-info__position {
-  background-color: white;
+  margin-bottom: 20px;
   padding: 5px 15px;
   border-radius: 20px;
+  background-color: white;
 }
 
 .contacts {
@@ -212,6 +214,7 @@ select {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 20px;
 }
 
 .cv-info__main-info {

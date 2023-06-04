@@ -210,6 +210,10 @@ select {
   padding: 80px;
 }
 
+.about, .knowledge, .code-example {
+  margin-bottom: 40px;
+}
+
 .about__title {
   margin-bottom: 20px;
 }
@@ -294,12 +298,8 @@ select {
 /* FOOTER start */
 
 .footer {
-  padding: 20px 60px 20px 280px;
-  background: linear-gradient(
-    90deg,
-    rgba(1, 154, 182, 0.406687675070028) 32%,
-    rgba(0, 212, 255, 0.5943627450980392) 99%
-  );
+  padding: 20px 100px 20px 280px;
+  background: linear-gradient(270deg, rgba(117,218,238,1) 0%, rgba(0,212,255,0.4150910364145658) 99%);
 }
 
 .footer__list {
